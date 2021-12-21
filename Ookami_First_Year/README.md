@@ -1,9 +1,12 @@
-# Case Study of TCP/IP tunings for High Performance Interconnects
+# Ookami - The First Year of a Computing Technology Testbed
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4324241.svg)](https://doi.org/10.5281/zenodo.4324241)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5796326.svg)](https://doi.org/10.5281/zenodo.5796326)
 
 **Authors**
-* Jenett Tillotson, National Cen
+* Eva Siegmann, Stony Brook University
+* Robert Harrison, Stony Brook University
 
 **Abstract:**
-TCP/IP remains a central protocol for high performance computers. Even when user codes are utilizing RDMA for communications, TCP/IP is often required for communica- tions with system infrastructure such as parallel file systems or authorization servers. Supercomputers with non-Ethernet interconnects often have an TCP/IP stack configured such as the Internet Protocol over Infiniband network layer. There are very few supercomputers that do not use TCP/IP as a communications layer. While most system professionals understand how to tune the TCP buffer sizes in order to get better performance, there are many other TCP/IP tunings that must be considered in order to get a high performing TCP network.
+Ookami [1] is a computing technology testbed funded by NSF (grant OAC 1927880). It provides researchers worldwide with free access to Fujitsu A64FX compute nodes. Those are the same as in the world’s current fastest machine, Fugaku at the RIKEN supercomputing center in Japan. The motivation behind Ookami is to provide researchers with access to this new technology to allow them to understand its strengths and weaknesses and port their applications to it. Ookami was installed in 2020 followed by an initial phase with friendly user access. Since the beginning of 2021 the cluster is open to researchers worldwide. During the first 9 months, around 60 projects and 170 users started using the system. There are several toolchains (GNU, Arm, Cray, Fujitsu), flavors of MPI, debuggers, and profiling tools available on the system, allowing users to investigate the performance of their applications in detail. One of the key features of the Fujitsu A64FX processor is SVE (scalable vector extension). Observations show that the exploitation of this feature differs a lot between different applications and compilers. In this presentation, we will describe Ookami, our efforts in user engagement and education, and success stories and challenges in using this new technology.
+
+[1]    https://www.stonybrook.edu/ookami
