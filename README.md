@@ -18,9 +18,6 @@
 ### [Kubernetes for HPC Administration](https://github.com/HPCSYSPROS/Workshop21/tree/master/Kubernetes_for_HPC)
 **Authors:** Samuel Knight
 
-### [Technical underpinnings of Azure HPC & AI supercomputing](https://github.com/HPCSYSPROS/Workshop21/tree/master/Technical_underpinning_Azure)
-**Authors:** Evan Burness
-
 ### [Utilizing Chameleon cloud for the IndySCC](https://github.com/HPCSYSPROS/Workshop21/tree/master/Utilizing_Chameleon)
 **Authors:** Michael Sherman
 
