@@ -1,9 +1,9 @@
-# Case Study of TCP/IP tunings for High Performance Interconnects
+# Kubernetes for HPC Administration
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4324241.svg)](https://doi.org/10.5281/zenodo.4324241)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5796388.svg)](https://doi.org/10.5281/zenodo.5796388)
 
 **Authors**
-* Jenett Tillotson, National Cen
+* Samuel Knight, Sandia National Laboratory
 
 **Abstract:**
-TCP/IP remains a central protocol for high performance computers. Even when user codes are utilizing RDMA for communications, TCP/IP is often required for communica- tions with system infrastructure such as parallel file systems or authorization servers. Supercomputers with non-Ethernet interconnects often have an TCP/IP stack configured such as the Internet Protocol over Infiniband network layer. There are very few supercomputers that do not use TCP/IP as a communications layer. While most system professionals understand how to tune the TCP buffer sizes in order to get better performance, there are many other TCP/IP tunings that must be considered in order to get a high performing TCP network.
+HPC software stacks require administrators to deploy and maintain a complex collection of software. Historically this was done on bare-metal nodes, which present challenges when maintaining a coherent suite of software. This paper describes hosting administrative HPC software on a Kubernetes platform, along with auxilary tooling for storage, IP/DNS management, metrics and logging. Since Kubernetes exclusively runs container images, individual components of the software stack run in simplified, reproducible environments. Altogether, the platform can replicate most of the advantages of a bare-metal environment, while improving on reproducibility, stability, uptime, and the quality of telemetry.

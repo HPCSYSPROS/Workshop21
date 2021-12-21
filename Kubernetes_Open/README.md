@@ -1,9 +1,12 @@
-# Case Study of TCP/IP tunings for High Performance Interconnects
+# Kubernetes with Open OnDemand Using Kyverno
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4324241.svg)](https://doi.org/10.5281/zenodo.4324241)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5796345.svg)](https://doi.org/10.5281/zenodo.5796345)
 
 **Authors**
-* Jenett Tillotson, National Cen
+* Trey Dockendorf, Ohio Supercomputing Center
 
 **Abstract:**
-TCP/IP remains a central protocol for high performance computers. Even when user codes are utilizing RDMA for communications, TCP/IP is often required for communica- tions with system infrastructure such as parallel file systems or authorization servers. Supercomputers with non-Ethernet interconnects often have an TCP/IP stack configured such as the Internet Protocol over Infiniband network layer. There are very few supercomputers that do not use TCP/IP as a communications layer. While most system professionals understand how to tune the TCP buffer sizes in order to get better performance, there are many other TCP/IP tunings that must be considered in order to get a high performing TCP network.
+Supporting Kubernetes through Open OnDemand presents many challenges with regard to safely allowing users to run applications inside Kubernetes in a similar manner to how jobs would run in an High Performance Computing batch environment. To overcome these challenges, the Ohio Supercomputer Center has utilized the Kyverno policy engine to ensure that users using Kubernetes are doing so in a safe and secure way.
+
+The main challenge with user-submitted Kubernetes pods was ensuring that those pods are run as the UID/GID and supplemental groups belonging to that user. Additionally, there were challenges ensuring that users were authorized for the account they specified and could be charged for the resources consumed inside Kubernetes. These challenges were solved by deploying the Kyverno policy engine and implementing policies that ensure a user’s pod has certain required configurations set. Data from our local LDAP was used by the Kyverno policies to ensure not only correct UID/GID mappings but also that only active users are running pods. These changes are used to permit Kubernetes pods launched through Open OnDemand to have access to the same file systems as the HPC batch environment.
+
