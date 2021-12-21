@@ -1,9 +1,9 @@
-# Case Study of TCP/IP tunings for High Performance Interconnects
+# Storing of Secrets for Retrieval by Configuration Management
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4324241.svg)](https://doi.org/10.5281/zenodo.4324241)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5796911.svg)](https://doi.org/10.5281/zenodo.5796911)
 
 **Authors**
-* Jenett Tillotson, National Cen
+* David King, National Center for Supercomputing Applications
 
 **Abstract:**
-TCP/IP remains a central protocol for high performance computers. Even when user codes are utilizing RDMA for communications, TCP/IP is often required for communica- tions with system infrastructure such as parallel file systems or authorization servers. Supercomputers with non-Ethernet interconnects often have an TCP/IP stack configured such as the Internet Protocol over Infiniband network layer. There are very few supercomputers that do not use TCP/IP as a communications layer. While most system professionals understand how to tune the TCP buffer sizes in order to get better performance, there are many other TCP/IP tunings that must be considered in order to get a high performing TCP network.
+This talk covers the process of architecting a secrets solution that implements a more secure way to share these secrets when applying configuration management to a large amount of machines. The author specifically talks about the integration with the Puppet configuration management tool, and future improvements they plan to make.
