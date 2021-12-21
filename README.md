@@ -6,7 +6,7 @@
 ###### [Workshop Website](http://sighpc-syspros.org/workshops/2021/)
 
 ---
-### [Enabling Research and Education through the Geddes Composable Platform](https://github.com/HPCSYSPROS/Workshop21/tree/master)
+### [Enabling Research and Education through the Geddes Composable Platform](https://github.com/HPCSYSPROS/Workshop21/tree/master/Enabling_Research_and_Education)
 **Authors:** Erik Gough, Sam Weekly, Brian Werts, Preston Smith
 
 ### [Ookami – The First Year of a Computing Technology Testbed](https://github.com/HPCSYSPROS/Workshop21/tree/master) 
